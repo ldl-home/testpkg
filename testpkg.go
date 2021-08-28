@@ -6,5 +6,5 @@ import (
 )
 
 func Md5New(text string) string {
-	return fmt.Sprintf("X", md5.Sum([]byte(text)))
+	return fmt.Sprintf("%x", md5.Sum([]byte(text)))
 }
